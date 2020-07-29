@@ -58,7 +58,12 @@ body {
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    transition: opacity .3s;
+    transition: .3s;
+}
+
+.ButtonLink:hover,
+.ButtonLink:focus {
+    background: var(--primaryHover);
 }
   
 @media (max-width: 800px) {

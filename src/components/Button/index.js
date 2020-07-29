@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+// import Link
+// const Button = styled(Link)``
+
 const Button = styled.button`
   color: var(--white);
   border: 1px solid var(--white);
@@ -19,6 +22,22 @@ const Button = styled.button`
   &:focus {
     background: var(--primaryHover);
   }
+
+  @media (max-width: 800px) {
+    a {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--primary);
+        border-radius: 0;
+        border: 0;
+        text-align: center;
+    }
+  }
 `;
 
 export default Button
+
+
+
