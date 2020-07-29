@@ -60,11 +60,6 @@ body {
     display: inline-block;
     transition: opacity .3s;
 }
-
-.ButtonLink:hover,
-.ButtonLink:focus {
-    opacity: .5;
-}
   
 @media (max-width: 800px) {
     a.ButtonLink {

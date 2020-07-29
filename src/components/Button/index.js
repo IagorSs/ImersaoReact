@@ -13,11 +13,11 @@ const Button = styled.button`
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
-  transition: opacity .3s;
+  transition: .3s;
 
   &:hover,
   &:focus {
-    opacity: .5;
+    background: var(--primaryHover);
   }
 `;
 
