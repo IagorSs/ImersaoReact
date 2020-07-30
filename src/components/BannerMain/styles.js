@@ -76,6 +76,7 @@ export const BannerMainContainer = styled.section`
     height: auto;
     min-height: 50vh;
   }
+  padding: 0;
 
   &:after,
   &:before {

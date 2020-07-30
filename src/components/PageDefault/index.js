@@ -7,15 +7,18 @@ const Main = styled.main`
   background-color: var(--background);
   color: var(--white);
   flex: 1;
+  padding: 0 5%;
 `;
 
-export default function PageDefault({ children }) {
+export default function PageDefault({ children, notStyledBefore, notStyledAfter }) {
   return (
     <>
       <Menu />
+        {notStyledBefore}
         <Main>
           {children}
         </Main>
+        {notStyledAfter}
       <Footer />
     </>
   )

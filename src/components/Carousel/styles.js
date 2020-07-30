@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Title = styled.h3`
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 35px;
   line-height: 1;
   margin-bottom: 16px;
@@ -20,8 +20,9 @@ export const Title = styled.h3`
 
 export const ExtraLink = styled.a`
   margin-left: 16px;
-  text-decoration: none;
   transition: opacity .3s;
+  padding: 10px 5px;
+  border-radius: 2px;
   &:hover,
   &:focus {
     opacity: .5;
@@ -52,4 +53,5 @@ export const VideoCardGroupContainer = styled.section`
   min-height: 197px;
   margin-left: 5%;
   margin-bottom: 16px;
+  padding-right: 5%;
 `;
