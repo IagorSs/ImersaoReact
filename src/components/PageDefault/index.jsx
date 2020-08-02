@@ -28,3 +28,15 @@ export default function PageDefault({
     </>
   );
 }
+
+PageDefault.defaultProps = {
+  children: '',
+  notStyledBefore: '',
+  notStyledAfter: '',
+};
+
+PageDefault.propTypes = {
+  children: PropTypes.any,
+  notStyledBefore: PropTypes.any,
+  notStyledAfter: PropTypes.any,
+};

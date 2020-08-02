@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default function ButtonLink({
   className,
@@ -12,3 +13,15 @@ export default function ButtonLink({
     </Link>
   );
 }
+
+ButtonLink.defaultProps = {
+  className: '',
+  href: '',
+  children: '',
+};
+
+ButtonLink.propTypes = {
+  className: PropTypes.string,
+  href: PropTypes.string,
+  children: PropTypes.string,
+};
