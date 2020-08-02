@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const FooterBase = styled.footer`
   background: #D45C1A;
   border-top: 2px solid var(--primary);
@@ -21,3 +20,5 @@ export const FooterBase = styled.footer`
     opacity: .3;
   }
 `;
+
+export default FooterBase;

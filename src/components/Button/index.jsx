@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from 'styled-components';
 
 // import Link
 // const Button = styled(Link)``
@@ -17,6 +17,10 @@ const Button = styled.button`
   text-decoration: none;
   display: inline-block;
   transition: .3s;
+  ${({ defineBackgroundColor }) => (defineBackgroundColor ? css`
+    background: var(--primary);
+    border: 0;
+  ` : '')}
 
   &:hover,
   &:focus {
@@ -37,7 +41,4 @@ const Button = styled.button`
   }
 `;
 
-export default Button
-
-
-
+export default Button;

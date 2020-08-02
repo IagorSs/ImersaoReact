@@ -6,17 +6,16 @@ import './Menu.css';
 import Button from '../Button';
 
 export default function Menu() {
-
-  return(
+  return (
     <nav className="Menu">
       <Link to="/">
         <img className="Logo" src={Logo} alt="IrFlix Logo" />
       </Link>
-{/* 
+      {/*
       <ButtonLink className="ButtonLink" href="/cadastro/video" >
         Componente alternativo
       </ButtonLink>
- */}
+      */}
       <Button as={Link} to="/cadastro/video">
         Novo vídeo
       </Button>

@@ -35,9 +35,15 @@ export const SliderItem = styled.li`
     height: 197px;
     object-fit: cover;
   }
+  transition: .3s ease-in-out;
+  &:hover,
+  &:focus {
+    transform: scale(1.4);
+    z-index: 1;
+  }
 `;
 
-
+// eslint-disable-next-line react/prop-types
 const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{

@@ -5,16 +5,22 @@ import PageDefault from '../../components/PageDefault';
 import data from '../../data/dados_iniciais.json';
 
 function Home() {
-
   const categorias = data.categorias.map((value, index) => {
-    return (
-      <Carousel key={index} category={value}/>
-    )
-  })
+    const thisKey = `CarouselCategory_${index}`;
+    return (<Carousel key={thisKey} category={value} />);
+  });
 
   return (
     <>
-      <PageDefault notStyledBefore={<BannerMain videoTitle= "Panic! At The Disco: I Write Sins Not Tragedies" videoDescription= "Best music of history" url= "https://www.youtube.com/watch?v=vc6vs-l5dkc"/>}>
+      <PageDefault
+        notStyledBefore={(
+          <BannerMain
+            videoTitle="EU SOU BURRO"
+            videoDescription="Best channel of history"
+            url="https://www.youtube.com/watch?v=_jqYXrv2Kdw"
+          />
+      )}
+      >
         {categorias}
       </PageDefault>
     </>
@@ -23,7 +29,7 @@ function Home() {
 
 export default Home;
 
-/* 
+/*
 Relload mágico do React
 JSX -> JavaScript XML
  */
