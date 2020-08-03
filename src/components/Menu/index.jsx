@@ -16,7 +16,7 @@ export default function Menu() {
         Componente alternativo
       </ButtonLink>
       */}
-      <Button as={Link} to="/cadastro/video">
+      <Button className="Button" as={Link} to="/cadastro/video">
         Novo vídeo
       </Button>
     </nav>

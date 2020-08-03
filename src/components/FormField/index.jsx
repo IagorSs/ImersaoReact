@@ -12,11 +12,7 @@ const FormFieldWrapper = styled.div`
   }
 `;
 
-const Label = styled.label`
-  ${({ align }) => align && css`
-    align-items: center;
-  `}
-`;
+const Label = styled.label``;
 
 Label.Text = styled.span`
   color: #E5E5E5;
@@ -56,13 +52,6 @@ const Input = styled.input`
   resize: none;
   border-radius: 4px;
   transition: border-color .3s;
-
-  ${({ type }) => type === 'color' && css`
-        & + ${Label.Text} { 
-          padding-top: 12px;
-        }
-      `
-}
   
   &:focus {
     border-bottom-color: var(--primary);
@@ -84,7 +73,7 @@ const Input = styled.input`
 `;
 
 function FormField({
-  type, name, label, value, onChange,
+  type, name, label, value, onChange, options,
 }) {
   /*
   const content = (type === 'textarea') ? (
@@ -105,27 +94,55 @@ function FormField({
     />
   );
  */
-  const fieldId = `id_${name}`;
+  const fieldId = `fieldId_${name}`;
   const isTextArea = type === 'textarea';
   const tag = isTextArea ? 'textarea' : 'input';
+
+  const hasOptions = Boolean(options.length);
 
   return (
     <FormFieldWrapper>
       <Label
         htmlFor={fieldId}
-        align={!isTextArea}
       >
         {/* {content} */}
-        <Input
-          as={tag}
-          type={type}
-          name={name}
-          value={value}
-          onChange={onChange}
-        />
+        {
+          !hasOptions && (
+            <Input
+              as={tag}
+              type={type}
+              name={name}
+              value={value}
+              onChange={onChange}
+              required
+            />
+          )
+        }
         <Label.Text>
           {label}
         </Label.Text>
+        {
+          hasOptions && (
+            <Input
+              as="select"
+              name={name}
+              value={value}
+              onChange={onChange}
+              id={`optionFor_${fieldId}`}
+              required
+            >
+              <option value="">Selecione a categoria</option>
+              {options.map((option) => (
+                <option
+                  value={option.id}
+                  key={`keyTo_${option.title}`}
+                >
+                  {option.title}
+                </option>
+              ))}
+            </Input>
+          )
+        }
       </Label>
     </FormFieldWrapper>
   );
@@ -135,14 +152,16 @@ FormField.defaultProps = {
   type: 'text',
   value: '',
   onChange: () => 'Not Implementted',
+  options: [],
 };
 
 FormField.propTypes = {
   label: PropTypes.string.isRequired,
-  type: PropTypes.string,
   name: PropTypes.string.isRequired,
+  type: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  options: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default FormField;

@@ -40,12 +40,6 @@
         "text": "Formação de Jogos na Alura",
         "url": "https://www.alura.com.br/cursos-online-front-end"
       }
-    },
-    {
-      "title": "Best channel of history",
-      "description": "This channel don't needs description",
-      "color": "#fdc50d",
-      "id": 6
     }
   ],
   "videos": [
@@ -192,12 +186,6 @@
       "categoriaId": 5,
       "title": "Resident Evil 8",
       "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-    },
-    {
-      "title": "EU NÃO CONSIGO.",
-      "url": "https://www.youtube.com/watch?v=s9RrCm6Ko34",
-      "categoriaId": 6,
-      "id": 25
     }
   ]
 }

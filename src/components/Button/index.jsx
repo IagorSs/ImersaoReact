@@ -28,6 +28,9 @@ const Button = styled.button`
   }
 
   @media (max-width: 800px) {
+    & {
+      padding: 12px 14px;
+    }
     a {
         position: fixed;
         left: 0;

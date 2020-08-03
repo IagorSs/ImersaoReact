@@ -8,7 +8,7 @@ const Main = styled.main`
   background-color: var(--background);
   color: var(--white);
   flex: 1;
-  padding: 0 5%;
+  padding: 30px 5%;
 `;
 
 export default function PageDefault({

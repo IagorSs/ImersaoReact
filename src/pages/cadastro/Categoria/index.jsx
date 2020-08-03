@@ -1,66 +1,49 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
+import categoryRepositorie from '../../../repositories/categoria';
+
+const Title = styled.h1`
+  margin-top: 0;
+  margin-bottom: 1.5em;
+`;
 
 export default function CadastroCategoria() {
-  const [categories, setCategories] = useState([]);
-
   const inittialValues = {
-    name: '',
+    title: '',
     description: '',
     color: '',
   };
 
-  const [category, setCategory] = useState(inittialValues);
+  const { handleChange, Values, clearForm } = useForm(inittialValues);
 
-  function setValue(propertie, value) {
-    setCategory({
-      ...category,
-      [propertie]: value,
-    });
-    // console.log(category)
-  }
-
-  function handleChange(event) {
-    // const { getAttribute, value } = event.target;
-    setValue(
-      event.target.getAttribute('name'),
-      event.target.value,
-    );
-  }
-
-  useEffect(() => {
-    const URL = 'http://localhost:3000/categories';
-    fetch(URL)
-      .then(async (res) => {
-        const JSONres = await res.json();
-        setCategories([
-          ...JSONres,
-        ]);
-      });
-  }, []);
+  const [categories, setCategories] = useState([]);
 
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria</h1>
+      <Title>Cadastro de Categoria</Title>
 
       <form onSubmit={(event) => {
         event.preventDefault();
         setCategories([
           ...categories,
-          category,
+          Values,
         ]);
-        setCategory(inittialValues);
+
+        categoryRepositorie.create(Values);
+
+        clearForm();
       }}
       >
 
         <FormField
-          label="Nome da Categoria "
-          name="name"
-          type="text"
-          value={category.name}
+          label="Título da Categoria "
+          name="title"
+          value={Values.title}
           onChange={handleChange}
         />
 
@@ -68,7 +51,7 @@ export default function CadastroCategoria() {
           label="Descrição "
           name="description"
           type="textarea"
-          value={category.description}
+          value={Values.description}
           onChange={handleChange}
         />
 
@@ -76,21 +59,21 @@ export default function CadastroCategoria() {
           label="Cor "
           name="color"
           type="color"
-          value={category.color}
+          value={Values.color}
           onChange={handleChange}
         />
 
-        <Button defineBackgroundColor>
+        <Button type="submit" defineBackgroundColor>
           Cadastrar
         </Button>
       </form>
 
       <ul>
         {categories.map((value, index) => {
-          const altIndex = `category_${index}`;
+          const altIndex = `Values_${index}`;
           return (
             <li key={altIndex}>
-              {value.name}
+              {value.title}
             </li>
           );
         })}
