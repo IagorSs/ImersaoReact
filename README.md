@@ -2,6 +2,8 @@
 
 ## Project build in ImersaoReact by Alura
 
+This is a project with I try copy the Netflix website layout for practice and learn more about React and database.
+
 ## Prerequisites
 
 ### Node.JS
@@ -24,9 +26,9 @@ Download and install Yarn by [this link](https://classic.yarnpkg.com/en/docs/ins
 
 To run the complete application, with local JSON database and website, you can run:
 
-'''
+```
 yarn dev
-'''
+```
 
 This command run and open the application in [http://localhost:3000](http://localhost:3000)<br/>
 The database will run in [http://localhost:8080](http://localhost:8080) (this is not acessible directly, just with path /videos or /categorias)<br/>
