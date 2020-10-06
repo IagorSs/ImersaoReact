@@ -1,4 +1,4 @@
-# IR FLIX ![dependencies](https://img.shields.io/david/iagorss/ImersaoReact)
+# IR FLIX ![Dependencies](https://img.shields.io/david/iagorss/ImersaoReact)![License](https://img.shields.io/github/license/iagorss/ImersaoReact)
 
 ## Project build in ImersaoReact by Alura
 
