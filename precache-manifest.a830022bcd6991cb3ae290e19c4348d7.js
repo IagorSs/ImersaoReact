@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3cd68708dc23800d89329b03156b23ff",
+    "revision": "d7fdb20da4bb1aeb653e43611b8dd53e",
     "url": "/ImersaoReact/index.html"
   },
   {
-    "revision": "ac6231468c0473f3c271",
+    "revision": "3bffaebc3237b17b16e4",
     "url": "/ImersaoReact/static/css/main.5523659f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ImersaoReact/static/js/2.7bd2532d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ac6231468c0473f3c271",
-    "url": "/ImersaoReact/static/js/main.08eaa6be.chunk.js"
+    "revision": "3bffaebc3237b17b16e4",
+    "url": "/ImersaoReact/static/js/main.b49c33f9.chunk.js"
   },
   {
     "revision": "481abd364bf2caf9ac37",
