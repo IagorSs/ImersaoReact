@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ImersaoReact/precache-manifest.a830022bcd6991cb3ae290e19c4348d7.js"
+  "/ImersaoReact/precache-manifest.0c43f2c4da77a071a1415af91e625685.js"
 );
 
 self.addEventListener('message', (event) => {
