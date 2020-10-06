@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/ImersaoReact/static/css/main.5523659f.chunk.css",
-    "main.js": "/ImersaoReact/static/js/main.a9807131.chunk.js",
-    "main.js.map": "/ImersaoReact/static/js/main.a9807131.chunk.js.map",
+    "main.js": "/ImersaoReact/static/js/main.5950b193.chunk.js",
+    "main.js.map": "/ImersaoReact/static/js/main.5950b193.chunk.js.map",
     "runtime-main.js": "/ImersaoReact/static/js/runtime-main.816bf44d.js",
     "runtime-main.js.map": "/ImersaoReact/static/js/runtime-main.816bf44d.js.map",
-    "static/js/2.7bd2532d.chunk.js": "/ImersaoReact/static/js/2.7bd2532d.chunk.js",
-    "static/js/2.7bd2532d.chunk.js.map": "/ImersaoReact/static/js/2.7bd2532d.chunk.js.map",
+    "static/js/2.f93ae538.chunk.js": "/ImersaoReact/static/js/2.f93ae538.chunk.js",
+    "static/js/2.f93ae538.chunk.js.map": "/ImersaoReact/static/js/2.f93ae538.chunk.js.map",
     "index.html": "/ImersaoReact/index.html",
-    "precache-manifest.0c43f2c4da77a071a1415af91e625685.js": "/ImersaoReact/precache-manifest.0c43f2c4da77a071a1415af91e625685.js",
+    "precache-manifest.1689a44bbd6ed9217b9ed211ba763722.js": "/ImersaoReact/precache-manifest.1689a44bbd6ed9217b9ed211ba763722.js",
     "service-worker.js": "/ImersaoReact/service-worker.js",
     "static/css/main.5523659f.chunk.css.map": "/ImersaoReact/static/css/main.5523659f.chunk.css.map",
-    "static/js/2.7bd2532d.chunk.js.LICENSE.txt": "/ImersaoReact/static/js/2.7bd2532d.chunk.js.LICENSE.txt",
+    "static/js/2.f93ae538.chunk.js.LICENSE.txt": "/ImersaoReact/static/js/2.f93ae538.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/ImersaoReact/static/media/logo.14f906ef.png"
   },
   "entrypoints": [
     "static/js/runtime-main.816bf44d.js",
-    "static/js/2.7bd2532d.chunk.js",
+    "static/js/2.f93ae538.chunk.js",
     "static/css/main.5523659f.chunk.css",
-    "static/js/main.a9807131.chunk.js"
+    "static/js/main.5950b193.chunk.js"
   ]
 }
