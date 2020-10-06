@@ -1,4 +1,4 @@
-# IR FLIX
+# IR FLIX ![dependencies](https://img.shields.io/david/iagorss/ImersaoReact)
 
 ## Project build in ImersaoReact by Alura
 
